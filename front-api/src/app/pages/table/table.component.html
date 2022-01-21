@@ -1,0 +1,128 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title"> Liste des etudiants</h4>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead  class=" text-primary">
+              <th>
+                Nom
+              </th>
+              <th>
+                Prenom
+              </th>
+              <th>
+                CIN
+              </th>
+              <th>
+                Tel
+              </th>
+              <th>
+                Mail
+              </th>
+              <th>
+                Etablissement
+              </th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let student of this.students">
+                <td>
+                  {{student.name}}
+                </td>
+                <td>
+                  {{student.lastName}}
+                </td>
+                <td>
+                  {{student.cin}}
+                </td>
+                <td>
+                  {{student.phone}}
+                </td>
+                <td>
+                  {{student.mail}}
+                </td>
+                <td>
+                  {{student.establishment}}
+                </td>
+                
+              </tr>
+
+             
+             
+            
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title"> Liste des Livres</h4>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead class=" text-primary">
+              <th>
+                Name
+              </th>
+              <th>
+                Auteur
+              </th>
+              <th>
+                Catégorie
+              </th>
+              <th>
+                Prix
+              </th>
+              <th>
+                Etat
+              </th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let book of this.books">
+                <td>
+                  {{book.name}}
+                </td>
+                <td>
+                  {{book.authorName}}
+                </td>
+                <td>
+                  {{book.category}}
+                </td>
+                <td>
+                  
+                {{book.price}}
+                </td>
+                <td>
+                  {{book.state}}
+                </td>
+
+                
+              </tr>
+
+             
+             
+            
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
